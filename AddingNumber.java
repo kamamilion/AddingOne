@@ -5,10 +5,9 @@ import java.util.ArrayList;
 public class AddingNumber {
 	 int number;
 	 
-		void setNumber(int n) {
+	void setNumber(int n) {
 			number = n;
 		}
-	
 	void IncreaseEachDigit() {
 		ArrayList<Integer> digits = new ArrayList<Integer>();
 		while (number != 0) {
@@ -21,12 +20,9 @@ public class AddingNumber {
 			i--;
 		}	
 }
-
-
 	public static void main(String[] args) {
 		AddingNumber test = new AddingNumber();
 		test.setNumber(84398);
 		test.IncreaseEachDigit();
-		
 	}
 }
