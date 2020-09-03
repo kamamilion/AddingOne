@@ -35,6 +35,10 @@ public class AddingNumber extends JPanel implements ActionListener {
 	public void actionPerformed(ActionEvent event) {
 		String a = text.getText();
 		number = Integer.parseInt(a);
+		increaseEachDigit();
+	}
+	
+	void increaseEachDigit() {	
 		ArrayList<Integer> digits = new ArrayList<Integer>();
 		int x = 0;
 		while (number != 0) {
