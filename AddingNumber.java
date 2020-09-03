@@ -36,7 +36,6 @@ public class AddingNumber extends JPanel implements ActionListener {
 		String a = text.getText();
 		number = Integer.parseInt(a);
 		ArrayList<Integer> digits = new ArrayList<Integer>();
-		String s = null;
 		int x = 0;
 		while (number != 0) {
 			digits.add(number % 10);
@@ -47,7 +46,7 @@ public class AddingNumber extends JPanel implements ActionListener {
 			x = x*10 + digits.get(i)+1;
 			i--;
 		}
-		s = String.valueOf(x);
+		String s = String.valueOf(x);
 		result.setText(s);
 	}
 		
