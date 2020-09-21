@@ -56,8 +56,7 @@ public class AddingNumber extends JPanel implements ActionListener {
 		
 
 	public static void main(String[] args) {
-		AddingNumber newGUI = new AddingNumber();
-		newGUI.prepareGUI();
+		new AddingNumber().prepareGUI();
 		
 	}
 }
